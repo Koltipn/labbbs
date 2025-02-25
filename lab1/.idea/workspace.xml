@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8b521a1e-e0c4-48c5-b91b-f96bc402e537" name="Список изменений" comment="">
       <change beforePath="$PROJECT_DIR$/.gigaide/gigaide.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gigaide/gigaide.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/.gigaide/gigaide.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.gigaide/gigaide.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/src/test/java/lab2/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/src/test/java/lab2/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +40,15 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -44,12 +56,12 @@
     &quot;assignee&quot;: &quot;Koltipn&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:Koltipn/lab1.git&quot;,
-    &quot;accountId&quot;: &quot;fa936f68-2398-498a-9081-c9fdc6552f42&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Koltipn/labbbs.git",
+    "accountId": "fa936f68-2398-498a-9081-c9fdc6552f42"
   }
-}</component>
+}]]></component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -65,13 +77,28 @@
   "keyToString": {
     "Gradle.MainTest.executor": "Run",
     "Gradle.lab1 [:org.example.Main.main()].executor": "Run",
+    "Gradle.Сборка lab1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/drozd/Рабочий стол/lab1-master"
+    "last_opened_file_path": "C:/Users/drozd/provereka",
+    "Приложение.Main.executor": "Run"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.MainTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="org.example.Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="21" />
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -106,12 +133,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Приложение.org.example.Main" />
       <item itemvalue="Gradle.MainTest" />
+      <item itemvalue="Приложение.org.example.Main" />
+      <item itemvalue="Приложение.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MainTest" />
+        <item itemvalue="Приложение.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -125,5 +154,16 @@
       <updated>1739296189779</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

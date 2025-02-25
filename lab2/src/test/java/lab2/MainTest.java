@@ -13,7 +13,6 @@ public class MainTest {
 
     @Test
     public void testProgramRunsSuccessfully() throws Exception {
-        // Проверяет, что программа запускается и завершается
         ByteArrayInputStream inputStream = new ByteArrayInputStream("2\n3\n".getBytes());
         System.setIn(inputStream);
 
@@ -25,7 +24,7 @@ public class MainTest {
         Future<?> future = executor.submit(() -> Main.main(new String[]{}));
 
         try {
-            future.get(10, TimeUnit.SECONDS);  // Ждём 10 секунд
+            future.get(10, TimeUnit.SECONDS);
         } catch (TimeoutException e) {
             future.cancel(true);
             fail("Программа зависла и не завершилась за 10 секунд");
@@ -44,7 +43,6 @@ public class MainTest {
 
     @Test
     public void testCorrectNumberOfSteps() throws Exception {
-        // Проверяет, что каждый поток делает нужное количество шагов
         int threadCount = 2;
         int steps = 4;
 
