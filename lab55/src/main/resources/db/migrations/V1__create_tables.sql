@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS public.category (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS public.pet (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    category_id BIGINT REFERENCES category(id) ON DELETE SET NULL,
+    status VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS public.tag (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    pet_id BIGINT REFERENCES pet(id) ON DELETE CASCADE
+);

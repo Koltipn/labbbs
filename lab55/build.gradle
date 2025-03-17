@@ -1,0 +1,74 @@
+plugins {
+	id 'application'
+	id 'java'
+	id 'org.springframework.boot' version '3.4.3'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'portercat.petshop'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    implementation 'org.liquibase:liquibase-core:4.20.0'
+
+    // Spring Boot Starter Data JPA
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // Spring Boot Starter Web
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Драйвер PostgreSQL (или H2 для тестов)
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // Lombok (опционально, для упрощения кода)
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // Springdoc OpenAPI (для Swagger UI)
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+
+    // Jakarta Validation API
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+
+    // Hibernate Validator (реализация Jakarta Validation)
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+
+    // Jackson Databind Nullable
+    implementation 'org.openapitools:jackson-databind-nullable:0.2.6'
+
+    // Jackson Annotations (для @JsonProperty, @JsonValue, @JsonCreator)
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.17.0'
+
+    // Jakarta Annotations (для @Nullable и других аннотаций)
+    implementation 'jakarta.annotation:jakarta.annotation-api:2.1.1'
+
+    // Тестирование
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.mockito:mockito-core:3.6.28'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+application {
+    mainClass = 'portercat.petshop.PetshopApplication'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+    ignoreFailures = true
+}
